@@ -1,0 +1,41 @@
+body {
+  font-family: getFont('main');
+  color: getColor(main-text);
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main-text {
+  color: getColor(secondary-text);
+
+  line-height: 1.71;
+}

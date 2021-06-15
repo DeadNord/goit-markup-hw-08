@@ -1,0 +1,28 @@
+.aside {
+  justify-content: space-between;
+}
+
+.aside__item {
+  position: relative;
+  width: 370px;
+  z-index: -1;
+}
+
+.aside__back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+
+  background-image: linear-gradient(to right, getColor(img-back), getColor(img-back));
+}
+
+.aside__text {
+  letter-spacing: 0.03em;
+
+  color: getColor(third-text);
+}

@@ -1,0 +1,57 @@
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  background-color: getColor(main-back);
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__overlay {
+  background-image: linear-gradient(to right, getColor(overlay-back), getColor(overlay-back)),
+    url(../images/back-hero.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__slogan {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  color: getColor(third-text);
+
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.hero__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px, 32px;
+  border-radius: 4px;
+
+  border-color: transparent;
+  color: getColor(third-text);
+  background-color: getColor(main-theme);
+
+  transition: background-color getFunct(duration) getFunct(timing);
+
+  &:hover,
+  &:focus {
+    background-color: getColor(hero-button);
+  }
+}

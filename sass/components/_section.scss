@@ -1,0 +1,11 @@
+.section {
+  padding-top: 94px;
+
+  &--team-back {
+    background-color: getColor(secondary-back);
+  }
+
+  &:last-child {
+    padding-bottom: 94px;
+  }
+}

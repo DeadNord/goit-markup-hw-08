@@ -1,0 +1,43 @@
+$colors: (
+  main-back: #2f303a,
+  secondary-back: #f5f4fa,
+  main-text: #212121,
+  secondary-text: #757575,
+  third-text: #ffffff,
+  main-theme: #2196f3,
+  main-link: rgba(75, 75, 75, 0.6),
+  footer-link: rgba(255, 255, 255, 0.6),
+  work-back: #eeeeee,
+  overlay-back: rgba(47, 48, 58, 0.4),
+  footer-link-back: rgba(255, 255, 255, 0.1),
+  client-border: #afb1b8,
+  hero-button: #188ce8,
+  img-back: rgba(47, 48, 58, 0.8),
+  work-anim: rgba(33, 150, 243, 0.9),
+  backdrop: rgba(0, 0, 0, 0.2),
+  close-button: rgba(0, 0, 0, 0.1),
+  comment: rgba(117, 117, 117, 0.5),
+  form-border: rgba(33, 33, 33, 0.2),
+);
+
+$funct: (
+  duration: 250ms,
+  timing: cubic-bezier(0.4, 0, 0.2, 1),
+);
+
+$font: (
+  'main': 'Roboto',
+  'second': 'Raleway',
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+@function getFont($key) {
+  @return map-get($font, $key);
+}
+
+@function getFunct($key) {
+  @return map-get($funct, $key);
+}

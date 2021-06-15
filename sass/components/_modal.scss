@@ -1,0 +1,209 @@
+.modal {
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 40px;
+
+  min-width: 528px;
+  min-height: 581px;
+
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: getColor(third-text);
+
+  transition: background-color getFunct(duration) getFunct(timing),
+    box-shadow getFunct(duration) getFunct(timing);
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  margin-bottom: 12px;
+}
+
+.modal__form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+
+  & div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.modal__name {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: initial;
+
+  width: auto;
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: getColor(secondary-text);
+
+  &:nth-child(4) {
+    margin-bottom: 20px;
+  }
+}
+
+.modal__icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+
+  width: 18px;
+  height: 18px;
+
+  .modal__name:focus-within & {
+    fill: getColor(main-theme);
+  }
+}
+
+.modal__field {
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  margin-top: 4px;
+
+  outline: none;
+  border: 1px solid getColor(form-border);
+  border-radius: 4px;
+
+  &--info {
+    height: 40px;
+    padding-left: 40px;
+  }
+
+  &--comment {
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+  }
+
+  &:focus-within {
+    border: 1px solid getColor(main-theme);
+  }
+
+  &--comment::placeholder {
+    color: getColor(comment);
+  }
+}
+
+.modal__agree {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: getColor(secondary-text);
+
+  & input[type='checkbox'] {
+    appearance: none;
+  }
+
+  &--link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: underline;
+
+    margin-left: 6px;
+
+    color: getColor(main-theme);
+  }
+}
+
+.modal__checkbox {
+  content: '';
+  display: inline-block;
+
+  margin-right: 8.38px;
+
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid getColor(main-text);
+  border-radius: 2px;
+
+  transition: border-color getFunct(duration) getFunct(timing),
+    background-color getFunct(duration) getFunct(timing);
+
+  .modal__agree input[type='checkbox']:focus ~ & {
+    border-color: getColor(main-theme);
+  }
+
+  .modal__agree input[type='checkbox']:checked ~ & {
+    border-color: getColor(main-theme);
+
+    background-color: getColor(main-theme);
+    background-image: url(../images/checkbox.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+  }
+}
+
+.modal__button-sent {
+  height: 50px;
+  min-width: 200px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-color: transparent;
+  color: getColor(third-text);
+  background-color: getColor(main-theme);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.modal__button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  padding: 0;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border-color: getColor(close-button);
+  background-color: getColor(third-text);
+}
+
+.modal__icon-close {
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 18px;
+  height: 18px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}

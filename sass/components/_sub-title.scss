@@ -1,0 +1,14 @@
+.sub-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.17;
+
+  &--join {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 20px;
+
+    color: getColor(third-text);
+  }
+}

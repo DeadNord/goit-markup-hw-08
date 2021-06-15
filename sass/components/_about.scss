@@ -1,0 +1,42 @@
+.about {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  width: 270px;
+
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+
+  &::before {
+    display: block;
+    content: '';
+    height: 120px;
+  }
+
+  &--detail::before {
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/Group1.jpg);
+  }
+
+  &--time::before {
+    background-image: url(../images/Group2.jpg);
+  }
+
+  &--plan::before {
+    background-image: url(../images/Group3.jpg);
+  }
+
+  &--tech::before {
+    background-image: url(../images/Group4.jpg);
+  }
+}
+
+.about__sub-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
