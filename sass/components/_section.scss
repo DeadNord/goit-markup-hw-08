@@ -1,11 +1,31 @@
 .section {
-  padding-top: 94px;
+  min-width: 480px;
+  padding-top: 60px;
 
   &--team-back {
     background-color: getColor(secondary-back);
   }
 
   &:last-child {
-    padding-bottom: 94px;
+    padding-bottom: 60px;
+  }
+
+  &--aside {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .section {
+    padding-top: 94px;
+
+    &:last-child {
+      padding-bottom: 94px;
+    }
+
+    &--aside {
+      display: block;
+      padding-bottom: 94px;
+    }
   }
 }

@@ -1,7 +1,15 @@
 .control {
-  justify-content: center;
+  flex-wrap: wrap;
 
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  margin-top: -15px;
+  margin-left: -8px;
+}
+
+.control__item {
+  margin-top: 15px;
+  margin-left: 8px;
 }
 
 .control__button {
@@ -31,6 +39,30 @@
   }
 }
 
-.control__item:not(:last-child) {
-  margin-right: 8px;
+@media (min-width: $tablet) {
+  .control {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .control__item {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .control__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .control {
+    margin-bottom: 50px;
+  }
 }

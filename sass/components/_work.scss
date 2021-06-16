@@ -1,18 +1,15 @@
 .work {
-  display: flex;
-  flex-wrap: wrap;
-
-  margin-left: -30px;
-  margin-top: -30px;
+  display: inline-block;
 }
 
 .work__item {
-  flex-basis: calc(100% / 3 -30px);
-
-  margin-left: 30px;
-  margin-top: 30px;
-
   cursor: pointer;
+
+  width: 450px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .work__link {
@@ -28,6 +25,10 @@
 .work__img {
   position: relative;
   overflow: hidden;
+
+  & img {
+    width: 450px;
+  }
 }
 
 .work__overlay {
@@ -97,4 +98,54 @@
   letter-spacing: 0.03em;
 
   color: getColor(secondary-text);
+}
+
+@media (min-width: $tablet) {
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  .work__item {
+    flex-basis: calc(100% / 2 -30px);
+
+    width: 354px;
+
+    margin-left: 30px;
+    margin-top: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .work__img img {
+    width: 354px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  .work__item {
+    flex-basis: calc(100% / 3 -30px);
+
+    width: 370px;
+
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .work__img img {
+    width: 370px;
+  }
 }

@@ -1,6 +1,4 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
   letter-spacing: 0.06em;
   text-align: center;
 
@@ -13,6 +11,8 @@
 }
 
 .hero__overlay {
+  min-width: 480px;
+  min-height: 400px;
   background-image: linear-gradient(to right, getColor(overlay-back), getColor(overlay-back)),
     url(../images/back-hero.jpg);
 
@@ -23,14 +23,22 @@
 
 .hero__slogan {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
 
   color: getColor(third-text);
 
-  max-width: 600px;
+  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+@media (min-width: $desktop) {
+  .hero__slogan {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .hero__button {

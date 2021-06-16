@@ -1,15 +1,22 @@
 .icon {
   font-family: getFont('second');
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  width: 145px;
+  width: 134px;
 
   &--center {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .icon {
+    width: 145px;
+    font-size: 26px;
   }
 }
 

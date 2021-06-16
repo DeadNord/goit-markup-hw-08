@@ -6,7 +6,23 @@
 .center__thumb {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media (min-width: $tablet) {
+  .center__thumb {
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .center__thumb {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

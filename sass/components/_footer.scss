@@ -1,17 +1,20 @@
 .footer {
   background-color: getColor(main-back);
+  text-align: center;
+  min-width: 480px;
 
   padding-top: 60px;
   padding-bottom: 60px;
+}
 
-  & .center__thumb.center__flex {
-    display: flex;
-    align-items: baseline;
-  }
+.footer__list--media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__media {
-  margin-left: 70px;
+  margin-top: 60px;
 }
 
 .footer__icon {
@@ -25,16 +28,16 @@
   letter-spacing: 0.03em;
   font-size: 14px;
 
-  .footer__list &:not(:first-child) {
+  .footer__text-address &:not(:first-child) {
     margin-top: 9px;
   }
 
-  &:not(:last-child) {
+  .footer__list--media &:not(:last-child) {
     margin-right: 10px;
   }
 }
 
-.footer__address {
+.footer__text-address {
   color: getColor(third-text);
 
   transition: color getFunct(duration) getFunct(timing);
@@ -67,11 +70,12 @@
 }
 
 .footer__subscribe {
-  width: 570px;
-  margin-left: auto;
+  width: 450px;
+
+  margin-top: 60px;
 }
 
-.footer__form {
+.footer__form--placeholder {
   height: 50px;
   min-width: 358px;
 
@@ -103,7 +107,9 @@
   line-height: 1.875;
   letter-spacing: 0.06em;
 
-  margin-left: 12px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
   display: flex;
   align-items: center;
@@ -123,4 +129,69 @@
   margin-left: 10px;
 
   fill: getColor(third-text);
+}
+
+@media (min-width: $tablet) {
+  .footer {
+    text-align: center;
+
+    & .center__thumb:not(:nth-child(3)) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .footer__media {
+    margin-top: 0;
+    margin-left: 165px;
+
+    width: 206px;
+  }
+
+  .footer__address {
+    width: 232px;
+  }
+
+  .footer__subscribe {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .footer {
+    text-align: start;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__media {
+    margin-top: 0;
+    margin-left: 70px;
+  }
+
+  .footer__list--media {
+    justify-content: start;
+  }
+
+  .footer__subscribe {
+    width: 570px;
+    margin-left: auto;
+    margin-top: 0;
+  }
+
+  .footer__button {
+    margin-top: 0;
+    margin-left: 12px;
+  }
+
+  .footer__form {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer .center__thumb {
+    display: flex;
+    align-items: center;
+  }
 }

@@ -1,9 +1,21 @@
-.client:not(:last-child) {
-  margin-right: 30px;
+.client {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.client__item {
+  width: 210px;
+  flex-basis: calc(100% / 2 -30px);
+
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .client__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   cursor: pointer;
 
@@ -29,5 +41,39 @@
   .client__link:hover &,
   .client__link:focus & {
     fill: getColor(main-theme);
+  }
+}
+
+@media (min-width: $tablet) {
+  .client__item {
+    width: 226px;
+
+    flex-basis: calc(100% / 3 -30px);
+  }
+
+  .client__link {
+    width: 226px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .client {
+    display: flex;
+    align-items: center;
+
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .client__item {
+    width: 170px;
+    margin-left: 0;
+    margin-top: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  .client__link {
+    width: 170px;
   }
 }

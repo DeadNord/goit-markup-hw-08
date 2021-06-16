@@ -1,28 +1,30 @@
-.aside {
-  justify-content: space-between;
-}
+@media (min-width: $desktop) {
+  .aside {
+    justify-content: space-between;
+  }
 
-.aside__item {
-  position: relative;
-  width: 370px;
-  z-index: -1;
-}
+  .aside__item {
+    position: relative;
+    width: 370px;
+    z-index: -1;
+  }
 
-.aside__back {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .aside__back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  position: absolute;
-  bottom: 0;
-  width: 370px;
-  height: 70px;
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
 
-  background-image: linear-gradient(to right, getColor(img-back), getColor(img-back));
-}
+    background-image: linear-gradient(to right, getColor(img-back), getColor(img-back));
+  }
 
-.aside__text {
-  letter-spacing: 0.03em;
+  .aside__text {
+    letter-spacing: 0.03em;
 
-  color: getColor(third-text);
+    color: getColor(third-text);
+  }
 }
