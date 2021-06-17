@@ -1,7 +1,7 @@
 .footer {
   background-color: getColor(main-back);
   text-align: center;
-  min-width: 480px;
+  min-width: 320px;
 
   padding-top: 60px;
   padding-bottom: 60px;
@@ -129,6 +129,10 @@
   margin-left: 10px;
 
   fill: getColor(third-text);
+}
+
+@media (min-width: $mobile) {
+  min-width: 480px;
 }
 
 @media (min-width: $tablet) {

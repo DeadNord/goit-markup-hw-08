@@ -1,5 +1,5 @@
 .section {
-  min-width: 480px;
+  min-width: 320px;
   padding-top: 60px;
 
   &--team-back {
@@ -13,6 +13,10 @@
   &--aside {
     display: none;
   }
+}
+
+@media (min-width: $mobile) {
+  min-width: 480px;
 }
 
 @media (min-width: $desktop) {
