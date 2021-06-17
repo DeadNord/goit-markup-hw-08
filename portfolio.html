@@ -25,16 +25,16 @@
           >
           <ul class="header__list">
             <li class="header__item-nav">
-              <a href="index.html" class="header__link header__link--selected">Студия</a>
+              <a href="index.html" class="header__link">Студия</a>
             </li>
             <li class="header__item-nav">
-              <a href="portfolio.html" class="header__link">Портфолио</a>
+              <a href="portfolio.html" class="header__link header__link--selected">Портфолио</a>
             </li>
             <li class="header__item-nav">
               <a href="" class="header__link">Контакты</a>
             </li>
           </ul>
-          <button type="button" class="header__nav-menu">
+          <button data-mobile-menu-open type="button" class="header__nav-menu">
             <svg class="header__nav-menu--icon">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
@@ -328,5 +328,73 @@
         </div>
       </div>
     </footer>
+    
+    <div class="mobile-menu is-hidden" data-mobile-menu>
+          <nav>
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item-nav">
+                <a href="index.html" class="mobile-menu__link">Студия</a>
+              </li>
+              <li class="mobile-menu__item-nav">
+                <a href="portfolio.html" class="mobile-menu__link mobile-menu__link--selected">Портфолио</a>
+              </li>
+              <li class="mobile-menu__item-nav">
+                <a href="" class="mobile-menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu__list mobile-menu__list--address">
+            <li class="mobile-menu__item-address">
+              <a href="mailto:info@devstudio.com" class="mobile-menu__address">
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-menu__item-address">
+              <a href="tel:+380961111111" class="mobile-menu__address">
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__list mobile-menu__list--social">
+            <li class="mobile-menu__item-social">
+              <a href="" class="mobile-menu__social">
+                Instagram</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <svg class="mobile-menu__line">
+          </svg>
+            </li>
+            <li class="mobile-menu__item-social">
+              <a href="" class="mobile-menu__social">
+                Twitter</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <svg class="mobile-menu__line">
+          </svg>
+            </li>
+            <li class="mobile-menu__item-social">
+              <a href="" class="mobile-menu__social">
+                Facebook</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <svg class="mobile-menu__line">
+          </svg>
+            </li>
+            <li class="mobile-menu__item-social">
+              <a href="" class="mobile-menu__social">
+                Linkedin</a
+              >
+            </li>
+          </ul>
+          <button data-mobile-menu-close type="button" class="icon--center button-close button-close--mobile-menu">
+          <svg class="button-close__icon button-close__icon--mobile-menu">
+            <use href="./images/icons.svg#icon-close-button"></use>
+          </svg>
+      </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

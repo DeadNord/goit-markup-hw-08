@@ -35,99 +35,6 @@
   display: none;
 }
 
-.header__item-nav:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: getColor(main-text);
-
-  transition: color getFunct(duration) getFunct(timing);
-
-  &:hover,
-  &:focus {
-    color: getColor(main-theme);
-  }
-
-  &--selected {
-    position: relative;
-    color: getColor(main-theme);
-  }
-
-  &--selected::after {
-    display: block;
-    content: '';
-    width: 100%;
-    height: 4px;
-
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: getColor(main-theme);
-    border-radius: 2px;
-
-    position: absolute;
-    bottom: 0;
-  }
-}
-
-.header__address {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-
-  color: getColor(secondary-text);
-
-  transition: color getFunct(duration) getFunct(timing);
-
-  &:hover,
-  &:focus {
-    color: getColor(main-theme);
-  }
-}
-
-.header__icon-phone {
-  width: 10px;
-  height: 16px;
-  cursor: pointer;
-
-  margin-right: 10px;
-
-  fill: getColor(secondary-text);
-
-  transition: fill getFunct(duration) getFunct(timing);
-
-  .header__address:hover &,
-  .header__address:focus & {
-    fill: getColor(main-theme);
-  }
-}
-
-.header__icon-mail {
-  width: 16px;
-  height: 12px;
-  cursor: pointer;
-
-  margin-right: 10px;
-
-  fill: getColor(secondary-text);
-
-  transition: fill getFunct(duration) getFunct(timing);
-
-  .header__address:hover &,
-  .header__address:focus & {
-    fill: getColor(main-theme);
-  }
-}
-
 @media (min-width: $tablet) {
   .header__icon {
     padding: 0;
@@ -148,6 +55,99 @@
 
   .header__item-address:not(:last-child) {
     margin-bottom: 10px;
+  }
+
+  .header__item-nav:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .header__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: getColor(main-text);
+
+    transition: color getFunct(duration) getFunct(timing);
+
+    &:hover,
+    &:focus {
+      color: getColor(main-theme);
+    }
+
+    &--selected {
+      position: relative;
+      color: getColor(main-theme);
+    }
+
+    &--selected::after {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 4px;
+
+      border-bottom-width: 4px;
+      border-bottom-style: solid;
+      border-bottom-color: getColor(main-theme);
+      border-radius: 2px;
+
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .header__address {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: getColor(secondary-text);
+
+    transition: color getFunct(duration) getFunct(timing);
+
+    &:hover,
+    &:focus {
+      color: getColor(main-theme);
+    }
+  }
+
+  .header__icon-phone {
+    width: 10px;
+    height: 16px;
+    cursor: pointer;
+
+    margin-right: 10px;
+
+    fill: getColor(secondary-text);
+
+    transition: fill getFunct(duration) getFunct(timing);
+
+    .header__address:hover &,
+    .header__address:focus & {
+      fill: getColor(main-theme);
+    }
+  }
+
+  .header__icon-mail {
+    width: 16px;
+    height: 12px;
+    cursor: pointer;
+
+    margin-right: 10px;
+
+    fill: getColor(secondary-text);
+
+    transition: fill getFunct(duration) getFunct(timing);
+
+    .header__address:hover &,
+    .header__address:focus & {
+      fill: getColor(main-theme);
+    }
   }
 }
 
