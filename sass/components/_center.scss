@@ -4,16 +4,22 @@
 }
 
 .center__thumb {
+  width: 480px;
+
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
+
   padding-left: 15px;
   padding-right: 15px;
 }
 
+@media (min-width: $mobile) {
+  width: 480px;
+}
+
 @media (min-width: $tablet) {
   .center__thumb {
-    width: 768px;
+    min-width: 768px;
     padding-left: 15px;
     padding-right: 15px;
   }

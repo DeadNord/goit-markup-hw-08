@@ -1,13 +1,11 @@
 .header {
   border-bottom: 1px solid getColor(work-back);
 
-  min-width: 480px;
+  width: 480px;
 }
 
 .header__icon {
   color: getColor(main-text);
-
-  margin-right: 93px;
 
   padding-top: 16px;
   padding-bottom: 16px;
@@ -37,6 +35,8 @@
 
 @media (min-width: $tablet) {
   .header__icon {
+    margin-right: 93px;
+
     padding: 0;
   }
 
