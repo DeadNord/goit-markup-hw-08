@@ -144,6 +144,7 @@
   .footer__media {
     margin-top: 0;
     margin-left: 165px;
+    margin-right: 0;
 
     width: 206px;
   }
@@ -192,6 +193,6 @@
 
   .footer .center__thumb {
     display: flex;
-    align-items: center;
+    align-items: baseline;
   }
 }
