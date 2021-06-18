@@ -70,14 +70,17 @@
 }
 
 .footer__subscribe {
-  width: 450px;
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
 
   margin-top: 60px;
 }
 
 .footer__form--placeholder {
+  width: 100%;
   height: 50px;
-  min-width: 358px;
 
   padding-left: 16px;
   padding-top: 15px;
@@ -132,7 +135,17 @@
 }
 
 @media (min-width: $mobile) {
-  min-width: 480px;
+  .footer__form--placeholder {
+    width: 450px;
+  }
+
+  .footer {
+    min-width: 480px;
+  }
+
+  .footer__subscribe {
+    width: 450px;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -173,6 +186,10 @@
   .footer__media {
     margin-top: 0;
     margin-left: 70px;
+  }
+
+  .footer__form--placeholder {
+    min-width: 358px;
   }
 
   .footer__list--media {

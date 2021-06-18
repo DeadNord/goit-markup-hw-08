@@ -6,8 +6,8 @@
 
   padding: 48px 40px;
 
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
 
   background-color: getColor(third-text);
 
@@ -20,6 +20,7 @@
 }
 
 .mobile-menu__list {
+  width: 100%;
   display: inline-block;
 
   &--address {
@@ -55,6 +56,7 @@
 }
 
 .mobile-menu__link {
+  width: 100%;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;

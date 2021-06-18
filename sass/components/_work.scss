@@ -5,7 +5,7 @@
 .work__item {
   cursor: pointer;
 
-  width: 450px;
+  width: 100%;
 
   &:not(:last-child) {
     margin-bottom: 30px;
@@ -27,7 +27,7 @@
   overflow: hidden;
 
   & img {
-    width: 450px;
+    width: 100%;
   }
 }
 
@@ -98,6 +98,16 @@
   letter-spacing: 0.03em;
 
   color: getColor(secondary-text);
+}
+
+@media (min-width: $tablet) {
+  .work__item {
+    width: 450px;
+  }
+
+  .work__img {
+    width: 450px;
+  }
 }
 
 @media (min-width: $tablet) {

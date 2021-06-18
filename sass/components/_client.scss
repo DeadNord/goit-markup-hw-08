@@ -1,22 +1,18 @@
 .client {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   justify-content: center;
-
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 .client__item {
-  width: 210px;
-  flex-basis: calc(100% / 2 -30px);
+  width: 100%;
 
-  margin-left: 30px;
-  margin-top: 30px;
+  &:not(:first-child) {
+    margin-top: 30px;
+  }
 }
 
 .client__link {
-  width: 210px;
+  width: 100%;
   height: 92px;
   cursor: pointer;
 
@@ -42,6 +38,29 @@
   .client__link:hover &,
   .client__link:focus & {
     fill: getColor(main-theme);
+  }
+}
+
+@media (min-width: $mobile) {
+  .client {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  .client__item {
+    width: 210px;
+
+    flex-basis: calc(100% / 2 -30px);
+
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .client__link {
+    width: 210px;
   }
 }
 

@@ -4,15 +4,15 @@
 
   background-color: getColor(main-back);
 
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero__overlay {
-  min-width: 320px;
-  min-height: 400px;
+  width: 100%;
+  height: 400px;
   background-image: linear-gradient(to right, getColor(overlay-back), getColor(overlay-back)),
     url(../images/back-hero.jpg);
 
@@ -34,10 +34,16 @@
 }
 
 @media (min-width: $mobile) {
-  min-width: 480px;
 }
 
 @media (min-width: $desktop) {
+  .hero__overlay {
+    height: 600px;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
   .hero__slogan {
     font-size: 44px;
     line-height: 1.36;
