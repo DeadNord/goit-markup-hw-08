@@ -533,10 +533,6 @@ p {
   margin-bottom: 30px;
 }
 
-.team__img {
-  width: 100%;
-}
-
 .team__wrap {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1493,6 +1489,7 @@ p {
 }
 
 .mobile-menu {
+  overflow-y: auto;
   z-index: 1000;
   position: fixed;
   top: 0;
@@ -1530,6 +1527,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 64px;
 }
 
