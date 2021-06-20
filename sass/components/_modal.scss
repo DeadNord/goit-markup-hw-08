@@ -7,8 +7,7 @@
 
   padding: 40px;
 
-  width: 100%;
-  height: 609px;
+  width: 95%;
 
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -111,7 +110,7 @@
   align-items: center;
   margin-bottom: 30px;
 
-  font-size: 12px;
+  font-size: 3vw;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
@@ -122,7 +121,7 @@
   }
 
   &--link {
-    font-size: 12px;
+    font-size: 3vw;
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: underline;
@@ -139,8 +138,8 @@
 
   margin-right: 8.38px;
 
-  width: 16px;
-  height: 15px;
+  width: 13px;
+  height: 12px;
 
   border: 2px solid getColor(main-text);
   border-radius: 2px;
@@ -186,10 +185,24 @@
 @media (min-width: $mobile) {
   .modal {
     width: 450px;
+    height: 609px;
   }
 
   .modal__name {
     width: 370px;
+  }
+
+  .modal__checkbox {
+    width: 16px;
+    height: 15px;
+  }
+
+  .modal__agree {
+    font-size: 12px;
+
+    &--link {
+      font-size: 12px;
+    }
   }
 }
 

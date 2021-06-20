@@ -20,16 +20,12 @@
 
 @media (min-width: $tablet) {
   .center__thumb {
-    min-width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 768px;
   }
 }
 
 @media (min-width: $desktop) {
   .center__thumb {
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }

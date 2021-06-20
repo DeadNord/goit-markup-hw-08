@@ -1,5 +1,5 @@
 .work {
-  display: inline-block;
+  display: block;
 }
 
 .work__item {
@@ -25,10 +25,7 @@
 .work__img {
   position: relative;
   overflow: hidden;
-
-  & img {
-    width: 100%;
-  }
+  max-width: 100%;
 }
 
 .work__overlay {
@@ -100,7 +97,7 @@
   color: getColor(secondary-text);
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $mobile) {
   .work__item {
     width: 450px;
   }
@@ -132,8 +129,12 @@
     }
   }
 
-  .work__img img {
+  .work__img {
     width: 354px;
+  }
+
+  .work__wrap {
+    padding-right: 0;
   }
 }
 
@@ -155,7 +156,11 @@
     margin-top: 30px;
   }
 
-  .work__img img {
+  .work__img {
     width: 370px;
+  }
+
+  .work__wrap {
+    padding-right: 24px;
   }
 }

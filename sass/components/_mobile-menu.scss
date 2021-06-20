@@ -3,6 +3,8 @@
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
 
   padding: 48px 40px;
 
@@ -24,7 +26,7 @@
   display: inline-block;
 
   &--address {
-    margin-top: 306px;
+    margin-top: auto;
   }
 
   &--social {
@@ -78,7 +80,7 @@
 
 .mobile-menu__address {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 8vw;
   line-height: 1.17;
   letter-spacing: 0.02em;
 
@@ -94,9 +96,21 @@
 
 .mobile-menu__social {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 4vw;
   line-height: 1.17;
   letter-spacing: 0.02em;
 
   color: getColor(main-theme);
+}
+
+@media (min-width: 380px) {
+  .mobile-menu__address {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 400px) {
+  .mobile-menu__social {
+    font-size: 18px;
+  }
 }

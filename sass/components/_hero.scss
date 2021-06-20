@@ -11,7 +11,7 @@
 }
 
 .hero__overlay {
-  width: 100%;
+  max-width: 1600px;
   height: 400px;
   background-image: linear-gradient(to right, getColor(overlay-back), getColor(overlay-back)),
     url(../images/back-hero.jpg);
@@ -31,9 +31,6 @@
   max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
-}
-
-@media (min-width: $mobile) {
 }
 
 @media (min-width: $desktop) {
