@@ -46,14 +46,16 @@
 }
 
 .work__text {
-  width: 322px;
+  width: 100%;
   height: 168px;
+  padding: 25px 15px;
+
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  font-size: 18px;
+  font-size: 4vw;
   line-height: 28px;
   letter-spacing: 0.03em;
 
@@ -98,6 +100,13 @@
 }
 
 @media (min-width: $mobile) {
+  .work__text {
+    width: 322px;
+    padding: 0;
+
+    font-size: 18px;
+  }
+
   .work__item {
     width: 450px;
   }

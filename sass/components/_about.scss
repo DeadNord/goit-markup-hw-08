@@ -54,6 +54,10 @@
     margin-top: -30px;
   }
 
+  .about__sub-title {
+    text-align: start;
+  }
+
   .about__item {
     width: 354px;
     flex-basis: calc(100% / 2 -30px);
@@ -100,9 +104,5 @@
     &--tech::before {
       width: 270px;
     }
-  }
-
-  .about__sub-title {
-    text-align: start;
   }
 }
