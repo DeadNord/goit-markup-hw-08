@@ -292,8 +292,8 @@ p {
   letter-spacing: 0.06em;
   text-align: center;
   background-color: #2f303a;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -308,6 +308,13 @@ p {
   background-size: cover;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/back-hero@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/back-hero@2x.jpg);
+  }
+}
+
 .hero__slogan {
   font-weight: 900;
   font-size: 26px;
@@ -316,6 +323,13 @@ p {
   max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+@media (min-width: 480px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }
 
 @media (min-width: 1200px) {
